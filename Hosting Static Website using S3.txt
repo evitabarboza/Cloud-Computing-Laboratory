@@ -1,0 +1,19 @@
+CLOUD COMPUTING:
+---------------
+How to host a static website in Cloud 
+1. Go to Search -> search s3
+2. Click on create bucket
+3. Give bucket name -> untick 'Block all public access'
+4. Tick - 'Turning off block all public access might result in this bucket and the objects within becoming public'
+Note: Bucket name should be only in lowercase
+5. Double click on the name of your bucket -> Click on upload
+6. Upload the static website files and click on save upload.
+7. Then it might take some time to upload. After changes and configuration -> Click on your bucket name ->
+   go to permission -> scroll down till you get bucket policy -> Click on edit
+8. Go to this website -> https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html -> search bucket policy.
+9. Click on Bucket policies for Amazon S3 -> scroll -> click on Hosting a static website using Amazon S3.
+10. Scroll -> Click on Setting permissions for website access -> scroll -> copy the Step 2: Add a bucket policy json code 
+    -> paste it in your bucket policy and change the bucket name to your bucket name -> save changes.
+11. Go to Permissions -> scroll -> click on static website hosting -> Edit.
+12. Enable static website hosting -> then in index document write index.html -> save.
+13. Then to run the website -> scroll down to the static website hosting -> click on the link generated -> Done.
